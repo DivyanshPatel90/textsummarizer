@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteText">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputtextlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Summary length %"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="#18A558"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#18A558"
+            app:suffixText="%">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/summaryLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start writing from here"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="#18A558"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/teal_200"
+            app:endIconMode="clear_text"
+
+            app:hintTextColor="#18A558">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg4"
+            android:text="Summarize"
+            android:textAllCaps="false"
+            android:textColor="#116530" />
+    </LinearLayout>
+
+
+</RelativeLayout>

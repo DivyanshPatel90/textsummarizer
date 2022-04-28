@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity"
+    android:paddingBottom="30dp"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/input" />
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/textBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg2"
+            android:text="Enter text"
+            android:textAllCaps="false"
+            android:textColor="#116530" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Upload file"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg2"
+            android:textColor="#116530"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
